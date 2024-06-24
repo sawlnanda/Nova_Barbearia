@@ -170,6 +170,12 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
+	/*color: rgba(0, 0, 0, 0.3);*/
+	/*text-shadow: 2px 2px red;*/
+}
+
+.titulo-principal:first-letter{
+	font-weight: bold;
 }
 
 .utensilios{
@@ -212,6 +218,7 @@ ul li{
 .beneficios{
 	padding: 3em 0;
 	background: #888888;
+	/*box-shadow: inset 0 0 30px red;*/
 
 
 }
@@ -238,9 +245,20 @@ font-weight: bold;
 
 }
 
+.itens:before{
+	content: "★";
+}
+
 
 .imagem-beneficios{
 width: 60%;
+opacity: 1;
+box-shadow: 10px 10px 20px black;
+}
+
+.imagem-beneficios:hover{
+	opacity: 0.3;
+	transition: 400ms;
 }
 
 .video{
